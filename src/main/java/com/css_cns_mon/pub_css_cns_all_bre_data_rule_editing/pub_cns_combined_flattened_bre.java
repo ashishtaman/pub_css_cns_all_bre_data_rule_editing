@@ -19163,4 +19163,59 @@ lst.removeAll(java.util.Arrays.asList("", null));
 public java.lang.Integer date_day_of_week(java.lang.String panelist_survey_start_date){
 	return 0;
 }
+
+ public String stringFilter(String str, String filter_str) {
+  String outputStr = "";
+  if (str != null && filter_str != null) {
+   char[] strToFilter = str.toCharArray();
+
+   for (char ch : strToFilter) {
+    if ((filter_str.indexOf(ch)) != -1) {
+     outputStr = outputStr + String.valueOf(ch);
+    }
+   }
+  }
+  return outputStr;
+ }
+ 
+public boolean isBlank(String str)
+    { 
+        return str != null && str.isEmpty();
+    }
+
+ public void removeListElements(java.util.List lst, java.util.List remove_elements) {
+
+ if(lst != null )
+        lst.removeAll(remove_elements);
+    }
+	
+      public String stringSubstring(String str,int start_index,int length)
+    {
+ int startIndex = start_index < 0 ? 0 : start_index-1;
+ int substringLength = length < 0 ? 0 : length;
+
+if( str == null || str.isEmpty() ) return str;
+ if(startIndex > str.length()) return "";
+ if(startIndex+substringLength > str.length()) return str.substring(startIndex);
+ else return str.substring(startIndex, startIndex + substringLength); 
+
+ }
+ 
+ public String stringConcat(String... args) {
+  String str_concat = "";
+  for (String i : args) {
+      if(i == null)
+      {
+          return null;
+      }
+   str_concat = str_concat + i;
+  }
+
+  return str_concat;
+ }
+
+public boolean isNull(Object obj){
+    return obj == null ;
+   }
+
 }
