@@ -45,7 +45,7 @@
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>data_transaction_level equals</header>
-          <constraintValueType>3</constraintValueType>
+          <constraintValueType>1</constraintValueType>
           <factField>data_transaction_level</factField>
           <fieldType>java.math.BigDecimal</fieldType>
           <operator>==</operator>
@@ -71,7 +71,7 @@
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
-  <packageName>com.css_cns_mon.pub_css_cns_all_bre_data_rule_editing__work</packageName>
+  <packageName>com.css_cns_mon.pub_css_cns_all_bre_data_rule_editing</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>

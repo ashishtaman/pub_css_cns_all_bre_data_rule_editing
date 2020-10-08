@@ -45,7 +45,7 @@
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>data_transaction_level equals</header>
-          <constraintValueType>3</constraintValueType>
+          <constraintValueType>1</constraintValueType>
           <factField>data_transaction_level</factField>
           <fieldType>java.math.BigDecimal</fieldType>
           <operator>==</operator>
@@ -54,7 +54,7 @@
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>data_ppmonth equals</header>
-          <constraintValueType>3</constraintValueType>
+          <constraintValueType>1</constraintValueType>
           <factField>data_ppmonth</factField>
           <fieldType>java.math.BigDecimal</fieldType>
           <operator>==</operator>
@@ -63,7 +63,7 @@
           <hideColumn>false</hideColumn>
           <width>100</width>
           <header>data_panelist_id equals</header>
-          <constraintValueType>3</constraintValueType>
+          <constraintValueType>1</constraintValueType>
           <factField>data_panelist_id</factField>
           <fieldType>java.math.BigDecimal</fieldType>
           <operator>==</operator>
@@ -75,13 +75,13 @@
     <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
       <hideColumn>false</hideColumn>
       <width>-1</width>
-      <header>Assign data.^^multi_remove_many^^( data.string_data_multi_choice_codes_11 , (1303004906 , 1303004907 , 1303004908 , 1303004909 , 1303004910 , 1303004911) ) to string_data_multi_choice_codes_11</header>
+      <header>Assign data.removeListElements(data.string_data_multi_choice_codes_11,Arrays.asList(&quot;1303004906&quot; , &quot;1303004907&quot; , &quot;1303004908&quot; , &quot;1303004909&quot; , &quot;1303004910&quot; , &quot;1303004911&quot;)) to string_data_multi_choice_codes_11</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
           <fieldValues>
             <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
               <field>string_data_multi_choice_codes_11</field>
-              <value>data.^^multi_remove_many^^( data.string_data_multi_choice_codes_11 , (1303004906 , 1303004907 , 1303004908 , 1303004909 , 1303004910 , 1303004911) )</value>
+              <value>data.removeListElements(data.string_data_multi_choice_codes_11,Arrays.asList(&quot;1303004906&quot; , &quot;1303004907&quot; , &quot;1303004908&quot; , &quot;1303004909&quot; , &quot;1303004910&quot; , &quot;1303004911&quot;))</value>
               <nature>3</nature>
               <type>String</type>
             </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
@@ -93,7 +93,7 @@
         <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Assign data.^^multi_remove_many^^( data.string_data_multi_choice_codes_11 , (1303004906 , 1303004907 , 1303004908 , 1303004909 , 1303004910 , 1303004911) ) to string_data_multi_choice_codes_11</header>
+          <header>Assign data.removeListElements(data.string_data_multi_choice_codes_11,Arrays.asList(&quot;1303004906&quot; , &quot;1303004907&quot; , &quot;1303004908&quot; , &quot;1303004909&quot; , &quot;1303004910&quot; , &quot;1303004911&quot;)) to string_data_multi_choice_codes_11</header>
           <fieldType>Boolean</fieldType>
         </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
       </childColumns>
@@ -106,7 +106,7 @@
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
-  <packageName>com.css_cns_mon.pub_css_cns_all_bre_data_rule_editing__work</packageName>
+  <packageName>com.css_cns_mon.pub_css_cns_all_bre_data_rule_editing</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>

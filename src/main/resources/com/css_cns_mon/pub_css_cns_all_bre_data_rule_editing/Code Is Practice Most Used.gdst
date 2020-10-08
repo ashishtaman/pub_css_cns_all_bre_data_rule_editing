@@ -44,8 +44,8 @@
         <org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>Data_ppmonth &gt;</header>
-          <constraintValueType>3</constraintValueType>
+          <header>data_ppmonth &gt;</header>
+          <constraintValueType>1</constraintValueType>
           <factField>data_ppmonth</factField>
           <fieldType>java.math.BigDecimal</fieldType>
           <operator>&gt;</operator>
@@ -80,7 +80,7 @@
       </org.kie.soup.project.datamodel.imports.Import>
     </imports>
   </imports>
-  <packageName>com.css_cns_mon.pub_css_cns_all_bre_data_rule_editing__work</packageName>
+  <packageName>com.css_cns_mon.pub_css_cns_all_bre_data_rule_editing</packageName>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
